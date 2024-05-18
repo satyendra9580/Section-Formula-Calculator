@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Formula Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showDimensions()">
+    <div class="container">
+        <div class="main-header">
+        
+        <div class="waviy">
+            <span style="--i:1">S</span>
+            <span style="--i:2">E</span>
+            <span style="--i:3">C</span>
+            <span style="--i:4">T</span>
+            <span style="--i:5">I</span>
+            <span style="--i:6">O</span>
+            <span style="--i:7">N</span>
+            <span style="--i:9">&nbsp;</span>
+            <span style="--i:1">F</span>
+            <span style="--i:2">O</span>
+            <span style="--i:3">R</span>
+            <span style="--i:4">M</span>
+            <span style="--i:5">U</span>
+            <span style="--i:6">L</span>
+            <span style="--i:7">A</span>
+            <span style="--i:9">&nbsp;</span>
+            <span style="--i:10">C</span>
+            <span style="--i:11">A</span>
+            <span style="--i:12">L</span>
+            <span style="--i:13">C</span>
+            <span style="--i:14">U</span>
+            <span style="--i:15">L</span>
+            <span style="--i:16">A</span>
+            <span style="--i:17">T</span>
+            <span style="--i:18">O</span>
+            <span style="--i:19">R</span>
+        </div>
+
+        <form id="shapeForm">
+            <div>
+                <label for="shape" id="label">Choose calculation:</label>
+                <select id="shape" onchange="showDimensions()">
+                    <option value="None" id="option">None</option>
+                    <option value="line" id="option">Line</option>
+                    <option value="plane"id="option">Plane</option>
+                </select>
+            </div>
+        </div>
+            <div id="lineDimensions">
+                <!-- <h2>For Line:</h2> -->
+                <div class="input-box">
+                <div id="input">
+                    <label for="x1">Enter x1:</label>
+                    <input type="number" id="x1">
+                </div>
+                <div>
+                    <label for="y1">Enter y1:</label>
+                    <input type="number" id="y1">
+                </div>
+                <div>
+                    <label for="x2">Enter x2:</label>
+                    <input type="number" id="x2">
+                </div>
+                <div>
+                    <label for="y2">Enter y2:</label>
+                    <input type="number" id="y2">
+                </div>
+                <div>
+                    <label for="m">Enter m:</label>
+                    <input type="number" id="m">
+                </div>
+                <div>
+                    <label for="n">Enter n:</label>
+                    <input type="number" id="n">
+                </div>
+                <div class="button">
+                <button type="submit" class="btn">Calculate</button>
+                </div>
+            </div>
+            </div>
+            <div id="planeDimensions" style="display: none;">
+                <!-- <h2>For Plane:</h2> -->
+                <div class="input-box">
+                <div>
+                    <label for="x1_plane">Enter x1:</label>
+                    <input type="number" id="x1_plane">
+                </div>
+                <div>
+                    <label for="y1_plane">Enter y1:</label>
+                    <input type="number" id="y1_plane">
+                </div>
+                <div>
+                    <label for="z1_plane">Enter z1:</label>
+                    <input type="number" id="z1_plane">
+                </div>
+                <div>
+                    <label for="x2_plane">Enter x2:</label>
+                    <input type="number" id="x2_plane">
+                </div>
+                <div>
+                    <label for="y2_plane">Enter y2:</label>
+                    <input type="number" id="y2_plane">
+                </div>
+                <div>
+                    <label for="z2_plane">Enter z2:</label>
+                    <input type="number" id="z2_plane">
+                </div>
+                <div>
+                    <label for="m_plane">Enter m:</label>
+                    <input type="number" id="m_plane">
+                </div>
+                <div>
+                    <label for="n_plane">Enter n:</label>
+                    <input type="number" id="n_plane">
+                </div>
+                <div>
+                    <label for="p_plane">Enter p:</label>
+                    <input type="number" id="p_plane">
+                </div>
+                <div>
+                    <label for="q_plane">Enter q:</label>
+                    <input type="number" id="q_plane">
+                </div>
+                <div>
+                    <label for="r_plane">Enter r:</label>
+                    <input type="number" id="r_plane">
+                </div>
+                <div class="button">
+                <button type="submit" class="btn">Calculate</button>
+            </div>
+                </div>
+            </div>
+           
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
